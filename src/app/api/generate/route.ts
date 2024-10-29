@@ -39,7 +39,6 @@ export async function POST(req: Request) {
   const result = await streamObject({
     model: openai("gpt-4o-mini"),
     schema: generateRequestSchema,
-    maxTokens: 4096,
     messages: [
       {
         role: "user",
