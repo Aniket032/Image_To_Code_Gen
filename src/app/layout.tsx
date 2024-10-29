@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { EdgeStoreProvider } from "../lib/edgestore";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -28,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <EdgeStoreProvider>{children}</EdgeStoreProvider>
       </body>
     </html>
   );
