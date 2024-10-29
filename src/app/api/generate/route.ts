@@ -1,3 +1,4 @@
+export const maxDuration = 45;
 import { openai } from "@ai-sdk/openai";
 import { streamObject } from "ai";
 import { generateRequestSchema } from "./schema";
